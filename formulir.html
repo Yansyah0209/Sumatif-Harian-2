@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+</head>
+<body bgcolor="#ffffff" style="padding: 20px; font-family: Arial, Helvetica, sans-serif;">
+
+    <h2><font color="#1b4965">FORMULIR PENDAFTARAN</font></h2>
+    <hr size="2" color="#1b4965">
+    <p>Silakan isi formulir pendaftaran berikut dengan data yang benar dan lengkap.<br>
+    <b>Tahun Pelajaran 2027/2028</b></p>
+
+    <form action="#" method="post">
+        
+        <!-- A. IDENTITAS DIRI -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>A. IDENTITAS DIRI</b></td>
+            </tr>
+            <tr>
+                <td width="25%">NIK</td>
+                <td width="2%">:</td>
+                <td><input type="text" name="nik" size="30" required></td>
+            </tr>
+            <tr>
+                <td>NISN</td>
+                <td>:</td>
+                <td><input type="text" name="nisn" size="30" required></td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="nama" size="45" required></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tempat_lahir" size="30"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="L"> Laki-laki &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="jk" value="P"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td>
+                    <select name="agama">
+                        <option value="">-- Pilih Agama --</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pas Foto</td>
+                <td>:</td>
+                <td>
+                    <input type="file" name="pas_foto"><br>
+                    <font size="2" color="#64748b">Format foto berwarna terbaru, latar belakang biru.</font>
+                </td>
+            </tr>
+        </table>
+
+        <!-- B. IDENTITAS SEKOLAH ASAL -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>B. IDENTITAS SEKOLAH ASAL</b></td>
+            </tr>
+            <tr>
+                <td width="25%">NPSN</td>
+                <td width="2%">:</td>
+                <td><input type="text" name="npsn" size="30"></td>
+            </tr>
+            <tr>
+                <td>Nama Sekolah/Madrasah</td>
+                <td>:</td>
+                <td><input type="text" name="nama_sekolah" size="45"></td>
+            </tr>
+            <tr>
+                <td>Alamat Sekolah</td>
+                <td>:</td>
+                <td><textarea name="alamat_sekolah" rows="2" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td>Jumlah Rombel</td>
+                <td>:</td>
+                <td><input type="number" name="jumlah_rombel" style="width: 80px;"></td>
+            </tr>
+        </table>
+
+        <!-- C. DATA ORANG TUA / WALI -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>C. DATA ORANG TUA / WALI</b></td>
+            </tr>
+            <tr>
+                <td width="25%">Nama Ayah</td>
+                <td width="2%">:</td>
+                <td><input type="text" name="nama_ayah" size="40"></td>
+            </tr>
+            <tr>
+                <td>Pekerjaan Ayah</td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaan_ayah" size="30"></td>
+            </tr>
+            <tr>
+                <td>Nama Ibu</td>
+                <td>:</td>
+                <td><input type="text" name="nama_ibu" size="40"></td>
+            </tr>
+            <tr>
+                <td>Pekerjaan Ibu</td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaan_ibu" size="30"></td>
+            </tr>
+            <tr>
+                <td>Nama Wali</td>
+                <td>:</td>
+                <td><input type="text" name="nama_wali" size="40"></td>
+            </tr>
+            <tr>
+                <td>No. Telepon / WhatsApp</td>
+                <td>:</td>
+                <td><input type="text" name="nohp" size="30"></td>
+            </tr>
+            <tr>
+                <td>Penghasilan Orang Tua/Wali</td>
+                <td>:</td>
+                <td>
+                    <select name="penghasilan">
+                        <option value="">-- Pilih --</option>
+                        <option value="<2m">Di bawah Rp2.000.000</option>
+                        <option value="2m-5m">Rp2.000.000 - Rp5.000.000</option>
+                        <option value="5m-10m">Rp5.000.001 - Rp10.000.000</option>
+                        <option value=">10m">Di atas Rp10.000.000</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <!-- D. PILIHAN PENDAFTARAN -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>D. PILIHAN PENDAFTARAN</b></td>
+            </tr>
+            <tr>
+                <td width="25%">Jalur Pendaftaran</td>
+                <td width="2%">:</td>
+                <td>
+                    <input type="radio" name="jalur_pilihan" value="tes"> Jalur Tes &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="jalur_pilihan" value="prestasi"> Jalur Prestasi
+                </td>
+            </tr>
+            <tr>
+                <td>Pilihan Madrasah</td>
+                <td>:</td>
+                <td>
+                    <select name="pilihan_madrasah">
+                        <option value="">-- Pilih Madrasah --</option>
+                        <option value="serpong">MAN Insan Cendekia Serpong</option>
+                        <option value="gorontalo">MAN Insan Cendekia Gorontalo</option>
+                        <option value="jambi">MAN Insan Cendekia Jambi</option>
+                        <option value="padang_pariaman">MAN Insan Cendekia Padang Pariaman</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Lokasi CBT</td>
+                <td>:</td>
+                <td>
+                    <select name="lokasi_cbt">
+                        <option value="">-- Pilih Lokasi CBT --</option>
+                        <option value="tangsel">Tangerang Selatan</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                        <option value="surabaya">Surabaya</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <!-- E. NILAI RAPOR -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>E. NILAI RAPOR</b></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table border="1" cellpadding="6" cellspacing="0" width="100%" style="border-collapse: collapse; border-color: #cbd5e1;">
+                        <tr bgcolor="#cbd5e1">
+                            <th>Semester</th>
+                            <th>Nilai Rata-rata</th>
+                        </tr>
+                        <tr>
+                            <td align="center">Semester 1</td>
+                            <td align="center"><input type="text" name="rapor_1" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Semester 2</td>
+                            <td align="center"><input type="text" name="rapor_2" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Semester 3</td>
+                            <td align="center"><input type="text" name="rapor_3" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Semester 4</td>
+                            <td align="center"><input type="text" name="rapor_4" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Semester 5</td>
+                            <td align="center"><input type="text" name="rapor_5" size="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- F. PRESTASI -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>F. PRESTASI</b></td>
+            </tr>
+            <tr>
+                <td width="25%">Nama Prestasi</td>
+                <td width="2%">:</td>
+                <td><input type="text" name="nama_prestasi" size="40"></td>
+            </tr>
+            <tr>
+                <td>Tingkat Prestasi</td>
+                <td>:</td>
+                <td>
+                    <select name="tingkat_prestasi">
+                        <option value="">-- Pilih --</option>
+                        <option value="sekolah">Sekolah</option>
+                        <option value="kecamatan">Kecamatan</option>
+                        <option value="kabupaten">Kabupaten/Kota</option>
+                        <option value="provinsi">Provinsi</option>
+                        <option value="nasional">Nasional</option>
+                        <option value="internasional">Internasional</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Sertifikat/Piagam</td>
+                <td>:</td>
+                <td><input type="file" name="file_prestasi"></td>
+            </tr>
+        </table>
+
+        <!-- G. UNGGAH DOKUMEN -->
+        <table border="0" cellpadding="6" cellspacing="0" width="100%" bgcolor="#f8fafc" style="border: 1px solid #cbd5e1; margin-bottom: 15px;">
+            <tr bgcolor="#e2e8f0">
+                <td colspan="3"><b>G. UNGGAH DOKUMEN</b></td>
+            </tr>
+            <tr>
+                <td width="35%">Kartu Keluarga</td>
+                <td width="2%">:</td>
+                <td><input type="file" name="file_kk"></td>
+            </tr>
+            <tr>
+                <td>Akta Kelahiran</td>
+                <td>:</td>
+                <td><input type="file" name="file_akta"></td>
+            </tr>
+            <tr>
+                <td>Surat Rekomendasi Kepala Sekolah</td>
+                <td>:</td>
+                <td><input type="file" name="file_rekomendasi"></td>
+            </tr>
+            <tr>
+                <td>Kartu Bantuan / SKTM</td>
+                <td>:</td>
+                <td><input type="file" name="file_sktm"></td>
+            </tr>
+        </table>
+
+        <p><font size="2" color="#64748b"><i>Catatan: Formulir ini merupakan contoh tampilan formulir pendaftaran untuk kebutuhan website. Pengiriman data secara nyata memerlukan sistem backend/server.</i></font></p>
+
+        <p>
+            <input type="submit" value="Kirim Pendaftaran" style="padding: 8px 20px; background-color: #1b4965; color: #ffffff; border: none; cursor: pointer;">
+            &nbsp;&nbsp;
+            <input type="reset" value="Reset Form" style="padding: 8px 20px; background-color: #64748b; color: #ffffff; border: none; cursor: pointer;">
+        </p>
+    </form>
+
+</body>
+</html>
